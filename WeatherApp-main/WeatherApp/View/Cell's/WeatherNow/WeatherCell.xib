@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WeatherCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Луга" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvl-uI-d6T">
+                        <rect key="frame" x="158" y="0.0" width="44" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN2-Ya-YDD">
+                        <rect key="frame" x="161.5" y="34" width="37.5" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNz-Cv-o1T">
+                        <rect key="frame" x="153.5" y="80" width="53.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2aK-7A-38k">
+                        <rect key="frame" x="147" y="110.5" width="66" height="20.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max.: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isL-yy-74W">
+                                <rect key="frame" x="0.0" y="0.0" width="66" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="HN2-Ya-YDD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1Fm-8a-rVU"/>
+                <constraint firstItem="qvl-uI-d6T" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4I5-vl-eDa"/>
+                <constraint firstItem="aNz-Cv-o1T" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PLR-gL-31V"/>
+                <constraint firstItem="2aK-7A-38k" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Sim-mH-DW9"/>
+                <constraint firstItem="qvl-uI-d6T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bma-IT-suf"/>
+                <constraint firstItem="HN2-Ya-YDD" firstAttribute="top" secondItem="qvl-uI-d6T" secondAttribute="bottom" constant="10" id="eaz-Dn-djn"/>
+                <constraint firstItem="2aK-7A-38k" firstAttribute="top" secondItem="aNz-Cv-o1T" secondAttribute="bottom" constant="10" id="ubm-Vg-Udo"/>
+                <constraint firstItem="aNz-Cv-o1T" firstAttribute="top" secondItem="HN2-Ya-YDD" secondAttribute="bottom" constant="10" id="uft-tj-dnV"/>
+            </constraints>
+            <size key="customSize" width="360" height="152"/>
+            <connections>
+                <outlet property="cityLabel" destination="qvl-uI-d6T" id="9AG-eE-j83"/>
+                <outlet property="descriptionLabel" destination="aNz-Cv-o1T" id="Eba-l8-Edv"/>
+                <outlet property="maxTempLabel" destination="isL-yy-74W" id="i3j-tT-dSU"/>
+                <outlet property="tempLabel" destination="HN2-Ya-YDD" id="lKS-i4-dnV"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="83.705357142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
